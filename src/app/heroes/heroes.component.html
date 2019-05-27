@@ -1,0 +1,15 @@
+<p class="two">
+  heroes works!{{agatha}}
+</p>
+<h2> Meus herois Gregos</h2>
+<ul>
+  <li *ngFor="let hero of Pegazus" (click)="onSelect(hero);">
+    <span> {{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<div>
+  <label>
+    <input [(ngModel)]="selectedHero.name" placeholder="nome">
+  </label>
+</div>
